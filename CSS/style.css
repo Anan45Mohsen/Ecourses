@@ -1,0 +1,246 @@
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+body{
+    perspective: 700px;
+}
+.web-card{
+    overflow: hidden;
+}
+
+.web-card img{
+    transition: 0.5s;
+}
+.web-card:hover  img{
+transform-style: preserve-3d;
+transform: scale(1.3);
+}
+
+.a-card{
+    color:brown;
+    text-decoration: none;
+    font-size: 25px;
+    line-height:25px;
+}
+.a-card:hover{
+    text-decoration: underline;
+    color: chocolate;
+}
+
+.bg-registration{
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/registration.jpg);
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+
+}
+
+.align-items-center{
+    align-items: center;
+}
+.needed h3{
+    color:chocolate;
+    letter-spacing: 5px;
+    
+}
+.needed h2 , ul , p  {
+color: beige;
+}
+
+.needed ul li {
+    list-style-type: none;
+    padding-left: 0px;
+    font-size: 19px;
+
+    
+}
+.needed li i{
+    color: chocolate;
+
+}
+ .custom-select{
+    transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+} 
+.custom-select{
+    display: inline-block;
+    width: 100%;
+    height: calc(1.5em + 0.75rem + 2px);
+    padding: 0.375rem 1.75rem 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    vertical-align: middle;
+    border-radius: 8px;
+    border: 1px solid #ced4da;
+}
+.custom-select:focus{
+    outline-style: initial;
+    outline-width: 0px;
+    outline-style: initial;
+    box-shadow: 0 0 0 0.2rem rgb(255 102 0 / 25%);
+
+}
+.sign-button button{
+    background-color: rgb(117, 3, 3);
+    color: beige;
+    text-align: center;
+}
+.btn-block{
+    width: 100%;
+    display: block;
+}
+.sign-button:hover button{
+    color: beige;
+    background-color: rgb(63, 0, 0);
+}
+.btn:not(:disabled):not(.disabled) {
+    cursor: pointer;
+}
+.team-img {
+    position: relative;
+}
+.team-img .team-social {
+    position: absolute;
+    width: 100%;
+    height: 71%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(65, 1, 1,0.8);
+    transition: .5s;
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+    border-radius: 5px;
+}
+.img-carding:hover .team-social{
+    opacity: 1;
+    visibility: visible;
+}
+.postion-relative{
+    position: relative;
+}
+.overflow-hidden{
+    overflow: hidden;
+}
+.blog-overlay {
+    position: absolute;
+    padding: 30px;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    background: linear-gradient(  rgb(65, 1, 1,0.2), rgb(63, 2, 2));
+    z-index: 1;
+}
+.blog-item:hover img{  
+    transform: scale(1.2);
+    transition: 0.6s;
+}
+.justify-content-start {
+    justify-content: flex-start !important;
+
+}
+.contacting a{
+    color: beige;
+    text-decoration: none;
+}
+.contacting  a:hover{
+    text-decoration: underline;
+    color: beige;
+}
+.input-group {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: 100%;
+}
+
+element.style {
+}
+.input-group > .input-group-append > {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+element.style {
+    padding: 30px;
+}
+.input-group > .form-control {
+    position: relative;
+    flex: 1 1 auto;
+    width: 1%;
+    min-width: 0;
+    margin-bottom: 0;
+}
+.form-control {
+    display: block;
+    height: calc(1.5em + 0.75rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.input-group-append {
+    margin-left: -1px;
+    display: flex;
+    position: relative;
+}
+.input-group-append .btn {
+    position: absolute;
+    z-index: 2;
+}
+.input-group-append >.input-btn {
+  border-top-left-radius: 0;
+border-bottom-left-radius: 0;
+color: beige;
+background-color: chocolate;
+  
+}
+.input-group-append >.input-btn:hover {
+background-color: rgb(146, 64, 5);
+color: beige;
+    
+  }
+
+.footer-a a{
+    text-decoration: none;
+    color: chocolate;
+}
+.footer-a a:hover{
+    text-decoration: underline;
+    color: chocolate;
+}
+.back-to-top{
+    position: fixed;
+    display: none;
+    right: 30px;
+    bottom: 30px;
+    z-index: 11;
+}
+.navigator a{
+ color: chocolate;
+ font-size: 20px;
+ display: inline-block;
+ margin: 0px 10px;
+}
+
+    
+
+
